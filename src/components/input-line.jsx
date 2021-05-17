@@ -52,7 +52,7 @@ class InputLine extends React.Component {
                 <form onSubmit={this.handleSubmit} className="input-form">
                     <input type="text" id="item" name="item" placeholder="Item" onChange={this.handleChange} value={this.state.item} className="input-field"/>
                     <input type="number" id="qty" name="qty" placeholder="Qty" onChange={this.handleChange} value={this.state.qty} className="input-field"/>
-                    <input type="text" id="units" name="units" placeholder="Units" onChange={this.handleChange} value={this.state.unit} className="input-field"/>
+                    <input type="text" id="units" name="units" placeholder="Units" onChange={this.handleChange} value={this.state.units} className="input-field"/>
                     <input type="text" id="price" name="price" placeholder="Price" onChange={this.handleChange} value={this.state.price} className="input-field"/>
                     <button type="submit" id="submit" className="submit-button">+</button>
                 </form>

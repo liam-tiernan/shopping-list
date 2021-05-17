@@ -1,4 +1,6 @@
 import React from 'react'
+import ListHeader from './list-header'
+import Item from './item'
 import '../css/item-list.css'
 
 class ItemList extends React.Component {
@@ -8,25 +10,20 @@ class ItemList extends React.Component {
     };
 
     render () {
-
         return (
             <div className="list-container">
-                <div className="list-header">
-                    <div className="header-item item-section">Item</div>
-                    <div className="header-item qty-section">Qty</div>
-                    <div className="header-item units-section">Units</div>
-                    <div className="header-item price-section">Price</div>
-                    <div className="header-item total-section">Total</div>
-                </div>
-                <ul>
+                <ListHeader />
+                <ul className="list-body">
                     {this.props.items.map(item => 
-                        <li> 
-                        <div>{item.item}</div>
-                        <div>{item.qty}</div>
-                        </li>
+                        <Item
+                            item={item.item}
+                            qty={item.qty}
+                            units={item.units}
+                            price={item.price}
+                            total={item.total}
+                        />
                     )}
                 </ul>
-                <p>{this.props.items[0].item}</p>
             </div>
         )
     }

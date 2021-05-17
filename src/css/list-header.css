@@ -1,0 +1,10 @@
+.list-header {
+    display: grid;
+    grid-template-columns: 200px 50px repeat(3, 140px);
+
+    padding: 5px 0px;
+    border-bottom: .5px solid #aaa;
+    width: fit-content;
+
+    font-weight: bold;
+}

@@ -7,14 +7,18 @@ class CreateView extends React.Component {
         super();
         this.state = {items:[{
                 item:"item1",
-                qty: "1",
+                qty: 1,
                 units: "stems",
-                price: "120",
+                price: 120,
+                total: 120
             }]}
         this.addItem = this.addItem.bind(this);
     };
 
     addItem(item) {
+        item.price = +item.price
+        item.qty = +item.qty
+        item.total = Math.round((item.price * item.qty) * 100) / 100
         this.setState({items: this.state.items.concat(item)});
     };
     

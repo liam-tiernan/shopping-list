@@ -2,25 +2,12 @@
     margin: 10px;
 }
 
-.list-header {
-    display: flex;
-
-    border-bottom: .5px solid #aaa;
-    width: fit-content;
+.list-body {
+    display: grid;
+    padding: 0;
 }
 
-.header-item {
-    margin: 10px;
-}
-
-.item-section {
-    margin: 10px 100px;
-}
-
-.qty-section {
-    margin: 10px 25px;
-}
-
-.units-section, .price-section {
-    margin: 10px 70px;
+.list-item {
+    display: grid;
+    grid-template-columns: 200px 50px repeat(3, 140px);
 }
