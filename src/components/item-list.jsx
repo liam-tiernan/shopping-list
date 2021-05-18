@@ -1,6 +1,7 @@
 import React from 'react'
 import ListHeader from './list-header'
 import Item from './item'
+import ListTotal from './list-total'
 import '../css/item-list.css'
 
 class ItemList extends React.Component {
@@ -9,6 +10,8 @@ class ItemList extends React.Component {
         this.state = {}
     };
 
+
+    // add method to calculate and pass props to total
     render () {
         return (
             <div className="list-container">
@@ -24,6 +27,8 @@ class ItemList extends React.Component {
                         />
                     )}
                 </ul>
+                <ListTotal 
+                />
             </div>
         )
     }
