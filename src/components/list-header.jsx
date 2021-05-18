@@ -11,11 +11,11 @@ class ListHeader extends React.Component {
 
         return (
             <div className="list-header">
-                <div className="header-item item-section">Item</div>
-                <div className="header-item qty-section">Qty</div>
-                <div className="header-item units-section">Units</div>
-                <div className="header-item price-section">Price</div>
-                <div className="header-item total-section">Total</div>
+                <div className="header-item header-item--item">Item</div>
+                <div className="header-item header-item--qty">Qty</div>
+                <div className="header-item header-item--units">Units</div>
+                <div className="header-item header-item--price">Price</div>
+                <div className="header-item header-item--total">Total</div>
             </div>
         )
     }

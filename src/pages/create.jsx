@@ -11,7 +11,15 @@ class CreateView extends React.Component {
                 units: "stems",
                 price: 120,
                 total: 120
-            }]}
+            },
+            {
+                item:"item1",
+                qty: 1,
+                units: "stems",
+                price: 120,
+                total: 120
+            }
+        ]}
         this.addItem = this.addItem.bind(this);
     };
 
@@ -26,7 +34,7 @@ class CreateView extends React.Component {
         return (
             <div>
                 <ItemList items={this.state.items}/>
-                {/* <InputLine addItem={this.addItem}/> */}
+                <InputLine addItem={this.addItem}/>
             </div>
         )
     }

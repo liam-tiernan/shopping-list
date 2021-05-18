@@ -12,11 +12,11 @@ class Item extends React.Component {
 
         return (
             <li className="list-item"> 
-                <div className="sub-item">{item}</div>
-                <div className="sub-item">{qty}</div>
-                <div className="sub-item">{units}</div>
-                <div className="sub-item">{price}</div>
-                <div className="sub-item">{total}</div>
+                <div className="sub-item sub-item--item">{item}</div>
+                <div className="sub-item sub-item--qty">{qty}</div>
+                <div className="sub-item sub-item--units">{units}</div>
+                <div className="sub-item sub-item--price">{price}</div>
+                <div className="sub-item sub-item--total">{total}</div>
             </li>
         )
     }

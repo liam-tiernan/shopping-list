@@ -1,13 +1,42 @@
 .list-container {
     margin: 10px;
+    width: 700px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 10px #ddd;
 }
 
 .list-body {
     display: grid;
-    padding: 0;
+    padding: 0px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    font-size: 15px;
 }
 
 .list-item {
     display: grid;
     grid-template-columns: 200px 50px repeat(3, 140px);
+
+    padding: 10px 15px;
+    margin-right: 1px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.sub-item--qty, .sub-item--units, .sub-item--price {
+    text-align: center;
+}
+
+.sub-item--total {
+    text-align: end;
 }
