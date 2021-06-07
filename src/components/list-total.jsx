@@ -8,11 +8,10 @@ class ListTotal extends React.Component {
     };
 
     render () {
+        const { item, price, total } = this.props;
         return (
             <div className="list-total">
                 <div className="sub-item sub-item--item">{item}</div>
-                <div className="sub-item sub-item--qty">{qty}</div>
-                <div className="sub-item sub-item--units">{units}</div>
                 <div className="sub-item sub-item--price">{price}</div>
                 <div className="sub-item sub-item--total">{total}</div>
             </div>

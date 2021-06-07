@@ -21,6 +21,7 @@ class CreateView extends React.Component {
             }
         ]}
         this.addItem = this.addItem.bind(this);
+        this.removeItem = this.addItem.bind(this);
     };
 
     addItem(item) {
@@ -29,11 +30,17 @@ class CreateView extends React.Component {
         item.total = Math.round((item.price * item.qty) * 100) / 100
         this.setState({items: this.state.items.concat(item)});
     };
+
+    removeItem(id) {
+        const array = [...this.state.items];
+        array.splice(id);
+        this.setState({items: array})
+    }
     
     render () {
         return (
             <div>
-                <ItemList items={this.state.items}/>
+                <ItemList items={this.state.items} removeItem={this.removeItem}/>
                 <InputLine addItem={this.addItem}/>
             </div>
         )

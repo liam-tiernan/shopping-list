@@ -1,6 +1,6 @@
 .list-container {
     margin: 10px;
-    width: 700px;
+    width: 735px;
     padding: 20px;
 
     border: 1px solid #ddd;
@@ -21,12 +21,16 @@
 
 .list-item {
     display: grid;
-    grid-template-columns: 200px 50px repeat(3, 140px);
+    grid-template-columns: 200px 50px repeat(3, 140px) 35px;
 
     padding: 10px 15px;
     margin-right: 1px;
     border-bottom: 1px solid #ddd;
-    
+}
+
+.list-total {
+    font-weight: 700;
+    grid-template-columns: 200px 50px repeat(3, 140px);
 }
 
 .list-item:last-child {
@@ -39,4 +43,21 @@
 
 .sub-item--total {
     text-align: end;
+}
+
+.sub-item--delete {
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20px;
+    width: 20px;
+    border: .5px solid #ddd;
+    border-radius: 5px;
+    justify-self: end;
+
+    padding: 0;
+    padding-bottom: 1px;
 }
