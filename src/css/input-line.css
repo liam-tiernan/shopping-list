@@ -63,7 +63,7 @@
     font-size: 21px;
     color: white;
 
-    justify-self: end;
+    /* justify-self: end; */
 }
 
 input::-webkit-outer-spin-button,

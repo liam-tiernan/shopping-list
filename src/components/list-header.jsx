@@ -8,7 +8,6 @@ class ListHeader extends React.Component {
     };
 
     render () {
-
         return (
             <div className="list-header">
                 <div className="header-item header-item--item">Item</div>

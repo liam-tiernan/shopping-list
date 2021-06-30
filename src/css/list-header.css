@@ -1,6 +1,6 @@
 .list-header {
     display: grid;
-    grid-template-columns: 200px 50px repeat(3, 140px);
+    grid-template-columns: 200px 50px repeat(3, 140px) 35px;
 
     padding: 5px 15px;
     border-bottom: .5px solid #aaa;
